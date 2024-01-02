@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import  CharacterList from './component/CharacterList';
 import  CharacterDetails from './component/CharacterDetails';
-import './App.css';
+// import './App.css';
 
 
 function App() {

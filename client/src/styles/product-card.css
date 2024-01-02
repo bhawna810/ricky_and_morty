@@ -1,6 +1,6 @@
-.product__image{
+.product_image{
     height: 200px;
-    width: 100%;
+    width: 100% ;
     
 }
 
@@ -38,3 +38,4 @@
     padding: 5px 18px 5px 18px;
     font-size: 15px;
 }
+

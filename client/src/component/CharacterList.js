@@ -43,7 +43,7 @@ const CharacterList = () => {
 
     for (let i = startIndex; i <= endIndex; i++) {
       pageNumber.push(
-        <button onClick={() => handleClick(i)} disabled={currentPage === i}>
+        <button onClick={() => handleClick(i)} disabled={currentPage === i} className='pagination_button'>
           {i}
         </button>
       );
@@ -57,9 +57,12 @@ const CharacterList = () => {
         <Row>
              <h3 className='heading  mt-4'> Welcome to our Application</h3>
               {currentProduct.map((character, index) => 
-                  <Col lg='3' md='4' sm='6' xs='12'>
-                     <Link to={`/character/${character.id}`}>
-                        <ProductCard items ={character} key = {index}/>
+                  <Col lg='3' md='4' sm='6' xs='12' >
+                     <Link to={`/character/${character.id}`} className='text-decoration-none'>
+                       <div className='col_div'>
+                          <ProductCard items ={character} key = {index}/>
+                       </div>
+                        
                     </Link>
                   </Col>
                 )}

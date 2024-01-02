@@ -9,7 +9,7 @@ const ProductCard = (props) => {
   return (
     <div className="product__item mt-5">
         <div className="product__img pb-4">
-           <img src={image} alt="should_be_image" className='product__image'/>
+           <img src={image} alt="should_be_image" className='product_image'/>
         </div>
         <div className="product__content pb-4">
             <h5> {name} </h5>

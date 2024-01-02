@@ -1,7 +1,5 @@
 .characterlist{
     background-color: #17202A;
-    /* background-color: #424949; */
-    
     color: #fff;
 }
 
@@ -13,4 +11,18 @@
     margin-top: 50px  !important;
     margin-bottom: 50px !important;
     text-align: center;
+}
+
+.pagination_button{
+    border-radius: 50%;
+    padding: 3px 8px 3px 8px;
+    margin: 3px;
+
+}
+
+@media only screen and (max-width: 576px) {
+    .col_div{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
