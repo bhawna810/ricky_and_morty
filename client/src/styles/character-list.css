@@ -1,0 +1,16 @@
+.characterlist{
+    background-color: #17202A;
+    /* background-color: #424949; */
+    
+    color: #fff;
+}
+
+.heading{
+    text-align: center;
+}
+
+.pagination_div{
+    margin-top: 50px  !important;
+    margin-bottom: 50px !important;
+    text-align: center;
+}

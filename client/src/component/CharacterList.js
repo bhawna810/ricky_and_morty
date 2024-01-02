@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import ProductCard from './ProductCard';
+import { Container , Row, Col} from 'reactstrap';
+
+import "../styles/character-list.css";
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
@@ -15,7 +19,7 @@ const CharacterList = () => {
   }, []);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [productPerPage] = useState(3);
+  const [productPerPage] = useState(4);
   const [numberOfButton] = useState(4);
 
   const indexOfLastProduct = currentPage * productPerPage;
@@ -48,21 +52,26 @@ const CharacterList = () => {
   }
 
   return (
-    <div>
-      <h1>Character List</h1>
-      {currentProduct.map((character) => (
-        <div key={character.id}>
-          <Link to={`/character/${character.id}`}>
-            <h2>{character.name}</h2>
-            <img src={character.image} alt={character.name} />
-            <p>Species: {character.species}</p>
-          </Link>
-        </div>
-      ))}
-      <div>
-         {renderPageNumbers()}
-      </div>
-    </div>
+    <section className='characterlist'>
+      <Container>
+        <Row>
+             <h3 className='heading  mt-4'> Welcome to our Application</h3>
+              {currentProduct.map((character, index) => 
+                  <Col lg='3' md='4' sm='6' xs='12'>
+                     <Link to={`/character/${character.id}`}>
+                        <ProductCard items ={character} key = {index}/>
+                    </Link>
+                  </Col>
+                )}
+        </Row>
+        <Row>
+          <div className='pagination_div '>
+              {renderPageNumbers()}
+          </div>
+        </Row>
+      </Container>
+    </section>
+   
   );
 }
 
