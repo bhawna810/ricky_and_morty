@@ -4,7 +4,7 @@ import "../styles/product-card.css";
 
 const ProductCard = (props) => {
   
-  const {id, name , image, species} = props.items;
+  const {name , image, species} = props.items;
 
   return (
     <div className="product__item mt-5">
