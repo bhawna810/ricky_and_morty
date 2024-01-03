@@ -7,7 +7,8 @@
 .first_div{
     color: #fff;
     border: 1px solid #fff;
-    border-radius: 6px;
+    /* border-radius: 55%; */
+    border-radius: 60px;
     background-color: #283747;
     transform: translate3d(0px, -15px, 0px);
     cursor: pointer;
@@ -24,6 +25,7 @@
 
 .product__img{
     border-radius: 30px;
+    /* height: 200px; */
 }
 
 .first_para, .third_para, .fifth_para {
@@ -74,6 +76,7 @@
 
 }
 
+
 @media only screen and (max-width: 600px){
    
     img{
@@ -86,10 +89,21 @@
 
 @media only screen and (max-width: 520px){
    
+    /* img{
+        border-radius: 30px;
+        height: 160px;
+        width: 100px;
+    }  */
+    
+    .details_div{
+       padding: 40px !important; 
+    }
+}
+
+@media only screen and (max-width: 334px){
     img{
         border-radius: 30px;
         height: 160px;
         width: 100px;
     } 
-  
 }

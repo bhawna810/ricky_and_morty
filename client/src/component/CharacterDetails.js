@@ -50,18 +50,6 @@ const CharacterDetails = () => {
                <p className='sixth_para'>{character.location.name}</p>
           </div>
         </Col>
-
-        {/* <Col lg="12">
-          <div className="tabs d-flex align-items-center gap-5 py-3">
-            <h6
-             
-            >
-              Description heelo
-            </h6>
-            
-            </div>
-        
-        </Col> */}
        
       </Row>
     </Container>
