@@ -11,7 +11,7 @@ const CharacterDetails = () => {
 
   useEffect(() => {
     const fetchCharacter = async () => {
-      const response = await axios.get(`http://localhost:5000/character/${id}`);
+      const response = await axios.get(`https://ricky-and-morty-backend.onrender.com/character/${id}`);
       console.log(response.data);
       setCharacter(response.data);
     };
